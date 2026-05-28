@@ -1,0 +1,955 @@
+/* =========================================================
+INSTAGRAM ENGAGEMENT AI - FUTURISTIC CSS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================================================
+GLOBAL
+========================================================= */
+
+html,
+body,
+[class*="css"] {
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+/* =========================================================
+MAIN APP BACKGROUND
+========================================================= */
+
+.stApp {
+
+background:
+    radial-gradient(circle at top left,
+    rgba(255,0,110,0.16),
+    transparent 25%),
+
+    radial-gradient(circle at bottom right,
+    rgba(58,134,255,0.16),
+    transparent 25%),
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #050816,
+        #0b1026,
+        #111827
+    );
+
+color: white;
+
+overflow-x: hidden;
+
+}
+
+/* =========================================================
+HIDE STREAMLIT DEFAULTS
+========================================================= */
+
+#MainMenu {
+visibility: hidden;
+}
+
+footer {
+visibility: hidden;
+}
+
+header {
+visibility: hidden;
+}
+
+/* =========================================================
+HERO SECTION
+========================================================= */
+
+.hero-box {
+
+position: relative;
+
+padding: 45px;
+
+border-radius: 30px;
+
+margin-bottom: 35px;
+
+overflow: hidden;
+
+background:
+    rgba(255,255,255,0.05);
+
+backdrop-filter: blur(18px);
+
+border:
+    1px solid rgba(255,255,255,0.08);
+
+box-shadow:
+    0px 0px 45px rgba(255,0,110,0.18);
+
+animation:
+    fadeIn 1.2s ease;
+
+}
+
+/* =========================================================
+HERO GLOW
+========================================================= */
+
+.hero-box::before {
+
+content: "";
+
+position: absolute;
+
+width: 320px;
+
+height: 320px;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(255,0,110,0.20),
+        transparent 70%
+    );
+
+top: -100px;
+
+right: -100px;
+
+animation:
+    pulse 7s infinite;
+
+}
+
+/* =========================================================
+HERO TITLE
+========================================================= */
+
+.hero-title {
+
+position: relative;
+
+z-index: 2;
+
+font-size: 64px;
+
+font-weight: 800;
+
+line-height: 1.1;
+
+background:
+    linear-gradient(
+        90deg,
+        #ff006e,
+        #c9184a,
+        #8338ec,
+        #3a86ff
+    );
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+animation:
+    slideUp 1s ease;
+
+}
+
+/* =========================================================
+HERO SUBTITLE
+========================================================= */
+
+.hero-subtitle {
+
+position: relative;
+
+z-index: 2;
+
+font-size: 22px;
+
+color: #d1d5db;
+
+margin-top: 15px;
+
+animation:
+    fadeIn 1.6s ease;
+
+}
+
+/* =========================================================
+MODERN SIDEBAR
+========================================================= */
+
+section[data-testid="stSidebar"] {
+
+display: block !important;
+
+visibility: visible !important;
+
+min-width: 270px !important;
+
+max-width: 270px !important;
+
+width: 270px !important;
+
+overflow: visible !important;
+
+background:
+    linear-gradient(
+        180deg,
+        rgba(8,12,30,0.98),
+        rgba(15,23,42,0.98)
+    );
+
+border-right:
+    1px solid rgba(255,255,255,0.08);
+
+backdrop-filter: blur(20px);
+
+box-shadow:
+    0px 0px 35px rgba(255,0,110,0.12);
+
+}
+
+/* =========================================================
+SIDEBAR CONTENT
+========================================================= */
+
+section[data-testid="stSidebar"] * {
+
+visibility: visible !important;
+
+}
+
+/* =========================================================
+SIDEBAR TITLE
+========================================================= */
+
+section[data-testid="stSidebar"] h1 {
+
+font-size: 28px !important;
+
+font-weight: 800 !important;
+
+background:
+    linear-gradient(
+        90deg,
+        #ff006e,
+        #8338ec,
+        #3a86ff
+    );
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+margin-bottom: 20px;
+
+}
+
+/* =========================================================
+SIDEBAR LABELS
+========================================================= */
+
+section[data-testid="stSidebar"] label {
+
+color: white !important;
+
+font-size: 14px !important;
+
+font-weight: 600 !important;
+
+}
+
+/* =========================================================
+SIDEBAR INPUTS
+========================================================= */
+
+section[data-testid="stSidebar"] .stNumberInput,
+section[data-testid="stSidebar"] .stSlider {
+
+background:
+    rgba(255,255,255,0.05);
+
+padding: 10px;
+
+border-radius: 16px;
+
+border:
+    1px solid rgba(255,255,255,0.08);
+
+margin-bottom: 15px;
+
+backdrop-filter: blur(12px);
+
+transition: 0.4s;
+
+box-shadow:
+    0px 0px 15px rgba(255,0,110,0.08);
+
+}
+
+/* =========================================================
+SIDEBAR HOVER
+========================================================= */
+
+section[data-testid="stSidebar"] .stNumberInput,
+section[data-testid="stSidebar"] .stSlider {
+
+transform:
+    translateY(-2px);
+
+box-shadow:
+    0px 0px 20px rgba(255,0,110,0.22);
+
+}
+
+/* =========================================================
+INPUT FIELD
+========================================================= */
+
+section[data-testid="stSidebar"] input {
+
+background:
+    rgba(255,255,255,0.06) !important;
+
+color: white !important;
+
+border-radius: 10px !important;
+
+border:
+    1px solid rgba(255,255,255,0.08) !important;
+
+}
+
+/* =========================================================
+SLIDER COLOR
+========================================================= */
+
+.stSlider [data-baseweb="slider"] div {
+
+color: #ff006e !important;
+
+}
+
+/* =========================================================
+KPI CONTAINER
+========================================================= */
+
+.kpi-container {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 18px;
+
+margin-top: 30px;
+
+margin-bottom: 35px;
+
+}
+
+/* =========================================================
+KPI CARD
+========================================================= */
+
+.kpi-card {
+
+position: relative;
+
+flex: 1;
+
+min-width: 180px;
+
+padding: 25px;
+
+border-radius: 24px;
+
+overflow: hidden;
+
+background:
+    rgba(255,255,255,0.05);
+
+backdrop-filter: blur(16px);
+
+border:
+    1px solid rgba(255,255,255,0.08);
+
+transition: 0.5s;
+
+box-shadow:
+    0px 0px 25px rgba(255,0,110,0.15);
+
+animation:
+    fadeIn 1.2s ease;
+
+}
+
+/* =========================================================
+KPI HOVER
+========================================================= */
+
+.kpi-card {
+
+transform:
+    translateY(-8px)
+    scale(1.02);
+
+box-shadow:
+    0px 0px 35px rgba(255,0,110,0.35);
+
+}
+
+/* =========================================================
+KPI ICON
+========================================================= */
+
+.kpi-icon {
+
+font-size: 30px;
+
+margin-bottom: 15px;
+
+}
+
+/* =========================================================
+KPI TITLE
+========================================================= */
+
+.kpi-title {
+
+font-size: 16px;
+
+color: #cbd5e1;
+
+margin-bottom: 10px;
+
+}
+
+/* =========================================================
+KPI VALUE
+========================================================= */
+
+.kpi-value {
+
+font-size: 24px;
+
+font-weight: 700;
+
+background:
+    linear-gradient(
+        90deg,
+        #ff006e,
+        #8338ec,
+        #3a86ff
+    );
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+}
+
+/* =========================================================
+KPI GLOW
+========================================================= */
+
+.kpi-glow {
+
+position: absolute;
+
+width: 180px;
+
+height: 180px;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(255,0,110,0.25),
+        transparent 70%
+    );
+
+top: -70px;
+
+right: -70px;
+
+animation:
+    pulseGlow 5s infinite;
+
+}
+
+/* =========================================================
+BUTTONS
+========================================================= */
+
+.stButton > button {
+
+width: 100%;
+
+height: 3.5em;
+
+border-radius: 18px;
+
+border: none;
+
+font-size: 18px;
+
+font-weight: 700;
+
+color: white;
+
+background:
+    linear-gradient(
+        90deg,
+        #ff006e,
+        #8338ec
+    );
+
+transition: 0.4s;
+
+box-shadow:
+    0px 0px 25px rgba(255,0,110,0.35);
+
+}
+
+/* =========================================================
+BUTTON HOVER
+========================================================= */
+
+.stButton > button {
+
+transform:
+    scale(1.02);
+
+box-shadow:
+    0px 0px 40px rgba(255,0,110,0.55);
+
+}
+
+/* =========================================================
+PREDICTION BOX
+========================================================= */
+
+.prediction-box {
+
+padding: 35px;
+
+border-radius: 25px;
+
+background:
+    rgba(255,255,255,0.05);
+
+border:
+    1px solid rgba(255,255,255,0.08);
+
+backdrop-filter: blur(16px);
+
+margin-top: 30px;
+
+margin-bottom: 30px;
+
+box-shadow:
+    0px 0px 35px rgba(255,0,110,0.20);
+
+animation:
+    fadeIn 1s ease;
+
+}
+
+/* =========================================================
+INSIGHT BOX
+========================================================= */
+
+.insight-box {
+
+padding: 30px;
+
+border-radius: 24px;
+
+background:
+    rgba(255,255,255,0.05);
+
+border-left:
+    6px solid #ff006e;
+
+line-height: 1.8;
+
+font-size: 17px;
+
+backdrop-filter: blur(16px);
+
+box-shadow:
+    0px 0px 25px rgba(255,0,110,0.15);
+
+animation:
+    fadeIn 1.4s ease;
+
+}
+
+/* =========================================================
+SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+
+background: #050816;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+background:
+    linear-gradient(
+        #ff006e,
+        #8338ec
+    );
+
+border-radius: 20px;
+
+}
+
+/* =========================================================
+ANIMATIONS
+========================================================= */
+
+@keyframes pulseGlow {
+
+0% {
+
+    transform: scale(1);
+
+    opacity: 0.5;
+}
+
+50% {
+
+    transform: scale(1.3);
+
+    opacity: 1;
+}
+
+100% {
+
+    transform: scale(1);
+
+    opacity: 0.5;
+}
+
+}
+
+@keyframes pulse {
+
+0% {
+
+    transform: scale(1);
+
+    opacity: 0.5;
+}
+
+50% {
+
+    transform: scale(1.2);
+
+    opacity: 1;
+}
+
+100% {
+
+    transform: scale(1);
+
+    opacity: 0.5;
+}
+
+}
+
+@keyframes fadeIn {
+
+from {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+}
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0px);
+}
+
+}
+
+@keyframes slideUp {
+
+from {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+}
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0px);
+}
+
+}
+
+section[data-testid="stSidebar"] {
+
+    transform: translateX(0px) !important;
+}
+
+
+/* ==========================================
+   ANIME PREDICTION CARD
+========================================== */
+
+.anime-prediction-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    border-radius: 35px;
+
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(18px);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0px 0px 40px rgba(255,0,110,0.18);
+
+    animation:
+        fadeIn 1s ease;
+}
+
+/* ==========================================
+   GLOW EFFECT
+========================================== */
+
+.anime-prediction-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,0,110,0.25),
+            transparent 70%
+        );
+
+    right: -120px;
+
+    top: -120px;
+}
+
+/* ==========================================
+   CHARACTER IMAGE
+========================================== */
+
+.anime-character img {
+
+    width: 230px;
+
+    animation:
+        floatAnime 4s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0px 0px 25px rgba(255,0,110,0.35));
+}
+
+/* ==========================================
+   TEXT SECTION
+========================================== */
+
+.anime-text-section {
+
+    flex: 1;
+}
+
+/* ==========================================
+   AI BADGE
+========================================== */
+
+.ai-badge {
+
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff006e,
+            #8338ec
+        );
+
+    color: white;
+
+    box-shadow:
+        0px 0px 20px rgba(255,0,110,0.25);
+}
+
+/* ==========================================
+   RESULT TEXT
+========================================== */
+
+.anime-result {
+
+    font-size: 70px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00f5d4,
+            #3a86ff
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.anime-description {
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #d1d5db;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    padding: 22px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid rgba(255,255,255,0.05);
+}
+
+/* ==========================================
+   FLOAT ANIMATION
+========================================== */
+
+@keyframes floatAnime {
+
+    0% {
+
+        transform:
+            translateY(0px);
+    }
+
+    50% {
+
+        transform:
+            translateY(-15px);
+    }
+
+    100% {
+
+        transform:
+            translateY(0px);
+    }
+}
+
+
+.anime-img{
+    width:260px;
+    animation: floatAnime 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(255,0,110,0.6));
+}
+
+@keyframes floatAnime{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.assistant-card{
+
+    margin-top:25px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    color:white;
+
+    line-height:2;
+
+    font-size:18px;
+
+    box-shadow:
+        0 0 25px rgba(0,255,255,0.15);
+}
